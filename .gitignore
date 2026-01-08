@@ -1,25 +1,24 @@
-# Ignore all files inside data directory
+# 1. 全域忽略：忽略所有名稱為 data 的資料夾 (無論在哪一層)
 data/
 
-# Ignore zip and txt files
+# 2. 忽略常見的大型檔案與壓縮檔
 *.zip
 *.txt
-
-# Keep the .gitignore itself
-!.gitignore
-
-# Ignore specific large folders (Relative paths!)
-STG-NF-main/
-mmskeleton/
-ubnormal/
-
-# Explicitly ignore common dataset zip/txt at repo root
-/Avenue_Dataset.zip
-/data.zip
-/shanghaitech.zip
-/ubnormal.zip
-/test_annotations.txt
-
-# Python cache
+*.pth
+*.pt
 __pycache__/
 *.py[cod]
+
+# 3. 針對特定專案忽略其內部的大型資料夾
+# (注意：這裡只忽略裡面的資料，不忽略專案本身)
+STG-NF-main/STG-NF-main/data/
+STG-NF-main/data/
+mmskeleton/
+Jigsaw-VAD/data/
+Jigsaw-VAD/checkpoints/
+
+# 4. 忽略根目錄下的大型資料集 (修正之前的絕對路徑錯誤)
+ubnormal/
+
+# 5. 保留設定檔本身
+!.gitignore
