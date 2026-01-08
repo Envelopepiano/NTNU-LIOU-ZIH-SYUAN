@@ -1,0 +1,20 @@
+# Ignore all files inside data directory
+/data/*
+
+# Ignore zip and txt files
+*.zip
+*.txt
+
+# Keep the .gitignore itself
+!.gitignore
+
+# Ignore specific large folders
+/STG-NF-main/STG-NF-main/data/
+/mmskeleton/
+
+# Explicitly ignore common dataset zip/txt at repo root
+/Avenue_Dataset.zip
+/data.zip
+/shanghaitech.zip
+/ubnormal.zip
+/test_annotations.txt
