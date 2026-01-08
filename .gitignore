@@ -16,6 +16,7 @@ STG-NF-main/data/
 mmskeleton/
 Jigsaw-VAD/data/
 Jigsaw-VAD/checkpoints/
+STG-NF-main/STG-NF-main/runs/
 
 # 4. 忽略根目錄下的大型資料集 (修正之前的絕對路徑錯誤)
 ubnormal/
