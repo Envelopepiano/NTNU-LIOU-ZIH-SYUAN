@@ -1,0 +1,1818 @@
+[
+    {
+        "id": 161,
+        "video": "01_0014",
+        "frame": "161.jpg",
+        "stg_score": 0.14605173098344712,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to presence of vehicles (bicycle) in pedestrian zone."
+    },
+    {
+        "id": 155,
+        "video": "01_0014",
+        "frame": "155.jpg",
+        "stg_score": 0.08809905516424285,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to presence of vehicles (bicycles)."
+    },
+    {
+        "id": 164,
+        "video": "01_0014",
+        "frame": "164.jpg",
+        "stg_score": 0.1755701029484937,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 158,
+        "video": "01_0014",
+        "frame": "158.jpg",
+        "stg_score": 0.11589495136541159,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle, which is banned in the pedestrian zone."
+    },
+    {
+        "id": 163,
+        "video": "01_0014",
+        "frame": "163.jpg",
+        "stg_score": 0.16599232655757684,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: Vehicles present in the pedestrian zone."
+    },
+    {
+        "id": 162,
+        "video": "01_0014",
+        "frame": "162.jpg",
+        "stg_score": 0.1561159167621462,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle usage (bicycle), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 156,
+        "video": "01_0014",
+        "frame": "156.jpg",
+        "stg_score": 0.09693917456874918,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 159,
+        "video": "01_0014",
+        "frame": "159.jpg",
+        "stg_score": 0.1258252523359732,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 160,
+        "video": "01_0014",
+        "frame": "160.jpg",
+        "stg_score": 0.13591574995473424,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 157,
+        "video": "01_0014",
+        "frame": "157.jpg",
+        "stg_score": 0.10623330226691519,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in the pedestrian zone, which is banned."
+    },
+    {
+        "id": 165,
+        "video": "01_0014",
+        "frame": "165.jpg",
+        "stg_score": 0.18474709117896995,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 166,
+        "video": "01_0014",
+        "frame": "166.jpg",
+        "stg_score": 0.19343298033550196,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Vehicles present in a pedestrian zone."
+    },
+    {
+        "id": 171,
+        "video": "01_0014",
+        "frame": "171.jpg",
+        "stg_score": 0.22742153129789458,
+        "vlm_score": 0.95,
+        "reason": "Vehicle detected (bicycles), which is a severe anomaly as it is banned."
+    },
+    {
+        "id": 169,
+        "video": "01_0014",
+        "frame": "169.jpg",
+        "stg_score": 0.21586683439515017,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (Bicycle)"
+    },
+    {
+        "id": 170,
+        "video": "01_0014",
+        "frame": "170.jpg",
+        "stg_score": 0.22199541693299296,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in a pedestrian zone."
+    },
+    {
+        "id": 173,
+        "video": "01_0014",
+        "frame": "173.jpg",
+        "stg_score": 0.23620983804625725,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: Vehicles (bicycles) present in pedestrian zone."
+    },
+    {
+        "id": 172,
+        "video": "01_0014",
+        "frame": "172.jpg",
+        "stg_score": 0.23215260853184164,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 174,
+        "video": "01_0014",
+        "frame": "174.jpg",
+        "stg_score": 0.2396258850998483,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to presence of a vehicle (bicycle) in a pedestrian-only zone."
+    },
+    {
+        "id": 167,
+        "video": "01_0014",
+        "frame": "167.jpg",
+        "stg_score": 0.2015518440685217,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 168,
+        "video": "01_0014",
+        "frame": "168.jpg",
+        "stg_score": 0.2090439598010781,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 175,
+        "video": "01_0014",
+        "frame": "175.jpg",
+        "stg_score": 0.24244233803330698,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: DETECTED Vehicles (Bicycles)"
+    },
+    {
+        "id": 177,
+        "video": "01_0014",
+        "frame": "177.jpg",
+        "stg_score": 0.24647154883726372,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycles), which are banned in the pedestrian zone."
+    },
+    {
+        "id": 176,
+        "video": "01_0014",
+        "frame": "176.jpg",
+        "stg_score": 0.2447070521806599,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 179,
+        "video": "01_0014",
+        "frame": "179.jpg",
+        "stg_score": 0.24871017246431065,
+        "vlm_score": 0.95,
+        "reason": "Detected severe anomaly: Vehicles present (bicycle)."
+    },
+    {
+        "id": 181,
+        "video": "01_0014",
+        "frame": "181.jpg",
+        "stg_score": 0.24956052862503067,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: Vehicles (Bicycles) in banned pedestrian zone."
+    },
+    {
+        "id": 178,
+        "video": "01_0014",
+        "frame": "178.jpg",
+        "stg_score": 0.2477886087385025,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) - Banned in pedestrian zone."
+    },
+    {
+        "id": 182,
+        "video": "01_0014",
+        "frame": "182.jpg",
+        "stg_score": 0.24957575688762607,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Bicycles detected in a pedestrian zone."
+    },
+    {
+        "id": 180,
+        "video": "01_0014",
+        "frame": "180.jpg",
+        "stg_score": 0.24928562773953003,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle, which is banned in the pedestrian zone."
+    },
+    {
+        "id": 185,
+        "video": "01_0014",
+        "frame": "185.jpg",
+        "stg_score": 0.24839589234935297,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle activity (bicycle) despite it being banned."
+    },
+    {
+        "id": 184,
+        "video": "01_0014",
+        "frame": "184.jpg",
+        "stg_score": 0.24896522438342067,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle (bicycle) in pedestrian zone."
+    },
+    {
+        "id": 183,
+        "video": "01_0014",
+        "frame": "183.jpg",
+        "stg_score": 0.24936710390704403,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to vehicle presence (bicycle)."
+    },
+    {
+        "id": 186,
+        "video": "01_0014",
+        "frame": "186.jpg",
+        "stg_score": 0.24768047645922547,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycle) in a pedestrian zone, which is banned."
+    },
+    {
+        "id": 187,
+        "video": "01_0014",
+        "frame": "187.jpg",
+        "stg_score": 0.24683654551223666,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly - Vehicle detected (Bicycle) in a banned zone"
+    },
+    {
+        "id": 188,
+        "video": "01_0014",
+        "frame": "188.jpg",
+        "stg_score": 0.24587851639175456,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 189,
+        "video": "01_0014",
+        "frame": "189.jpg",
+        "stg_score": 0.24481826432154707,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles (bicycles) in a pedestrian zone, which is banned."
+    },
+    {
+        "id": 190,
+        "video": "01_0014",
+        "frame": "190.jpg",
+        "stg_score": 0.2436656284253819,
+        "vlm_score": 0.95,
+        "reason": "Vehicle detected (bicycle) - Severe Anomaly."
+    },
+    {
+        "id": 194,
+        "video": "01_0014",
+        "frame": "194.jpg",
+        "stg_score": 0.23827117782283977,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected."
+    },
+    {
+        "id": 193,
+        "video": "01_0014",
+        "frame": "193.jpg",
+        "stg_score": 0.2397273319429717,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 192,
+        "video": "01_0014",
+        "frame": "192.jpg",
+        "stg_score": 0.24111430168396145,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 196,
+        "video": "01_0014",
+        "frame": "196.jpg",
+        "stg_score": 0.23515346987373836,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Bicycles detected in a pedestrian zone."
+    },
+    {
+        "id": 191,
+        "video": "01_0014",
+        "frame": "191.jpg",
+        "stg_score": 0.24242876265229288,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles (bicycle) with a score of 0.95, indicating a severe anomaly."
+    },
+    {
+        "id": 195,
+        "video": "01_0014",
+        "frame": "195.jpg",
+        "stg_score": 0.23674703147734352,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian-only zone."
+    },
+    {
+        "id": 197,
+        "video": "01_0014",
+        "frame": "197.jpg",
+        "stg_score": 0.2334859145240147,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected in a pedestrian zone."
+    },
+    {
+        "id": 198,
+        "video": "01_0014",
+        "frame": "198.jpg",
+        "stg_score": 0.23173609682125146,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in pedestrian zone."
+    },
+    {
+        "id": 199,
+        "video": "01_0014",
+        "frame": "199.jpg",
+        "stg_score": 0.2298915949476737,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (bicycle) in the pedestrian zone."
+    },
+    {
+        "id": 200,
+        "video": "01_0014",
+        "frame": "200.jpg",
+        "stg_score": 0.22793550685261593,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly due to detected vehicles (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 201,
+        "video": "01_0014",
+        "frame": "201.jpg",
+        "stg_score": 0.22584631800066307,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in pedestrian zone."
+    },
+    {
+        "id": 202,
+        "video": "01_0014",
+        "frame": "202.jpg",
+        "stg_score": 0.2235980128223228,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in pedestrian zone."
+    },
+    {
+        "id": 203,
+        "video": "01_0014",
+        "frame": "203.jpg",
+        "stg_score": 0.22116046557247948,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles in a pedestrian zone."
+    },
+    {
+        "id": 204,
+        "video": "01_0014",
+        "frame": "204.jpg",
+        "stg_score": 0.21850013025365603,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in a banned pedestrian zone."
+    },
+    {
+        "id": 206,
+        "video": "01_0014",
+        "frame": "206.jpg",
+        "stg_score": 0.21236603609933305,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Vehicles (bicycles) present in a banned pedestrian zone."
+    },
+    {
+        "id": 208,
+        "video": "01_0014",
+        "frame": "208.jpg",
+        "stg_score": 0.20490334884006475,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly Detected: Vehicle (Bicycle)"
+    },
+    {
+        "id": 207,
+        "video": "01_0014",
+        "frame": "207.jpg",
+        "stg_score": 0.20881837527346084,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 209,
+        "video": "01_0014",
+        "frame": "209.jpg",
+        "stg_score": 0.20059015052408447,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle (bicycle) in pedestrian zone."
+    },
+    {
+        "id": 210,
+        "video": "01_0014",
+        "frame": "210.jpg",
+        "stg_score": 0.19585371953250938,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to the presence of vehicles (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 205,
+        "video": "01_0014",
+        "frame": "205.jpg",
+        "stg_score": 0.21558103114056687,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 211,
+        "video": "01_0014",
+        "frame": "211.jpg",
+        "stg_score": 0.1906765236555101,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 213,
+        "video": "01_0014",
+        "frame": "213.jpg",
+        "stg_score": 0.17897675305982017,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 215,
+        "video": "01_0014",
+        "frame": "215.jpg",
+        "stg_score": 0.16555489496567122,
+        "vlm_score": 0.95,
+        "reason": "Vehicle detected (bicycle), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 214,
+        "video": "01_0014",
+        "frame": "214.jpg",
+        "stg_score": 0.17246981541187129,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (bicycle) in the pedestrian zone."
+    },
+    {
+        "id": 216,
+        "video": "01_0014",
+        "frame": "216.jpg",
+        "stg_score": 0.1582695480243312,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles (bicycles) in a pedestrian zone which is strictly prohibited."
+    },
+    {
+        "id": 217,
+        "video": "01_0014",
+        "frame": "217.jpg",
+        "stg_score": 0.15066284772857644,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle (bicycle) in pedestrian zone."
+    },
+    {
+        "id": 212,
+        "video": "01_0014",
+        "frame": "212.jpg",
+        "stg_score": 0.18505017150476274,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Vehicle presence (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 218,
+        "video": "01_0014",
+        "frame": "218.jpg",
+        "stg_score": 0.14279434529312807,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle (bicycle) in a prohibited area."
+    },
+    {
+        "id": 219,
+        "video": "01_0014",
+        "frame": "219.jpg",
+        "stg_score": 0.13473252543351674,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to presence of bicycles in a banned area."
+    },
+    {
+        "id": 221,
+        "video": "01_0014",
+        "frame": "221.jpg",
+        "stg_score": 0.11833525274764428,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle)."
+    },
+    {
+        "id": 220,
+        "video": "01_0014",
+        "frame": "220.jpg",
+        "stg_score": 0.12655281750786312,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles (bicycles) in a pedestrian zone, which is banned."
+    },
+    {
+        "id": 223,
+        "video": "01_0014",
+        "frame": "223.jpg",
+        "stg_score": 0.10211408185284294,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 908,
+        "video": "01_0016",
+        "frame": "210.jpg",
+        "stg_score": 0.08439643961831965,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle."
+    },
+    {
+        "id": 910,
+        "video": "01_0016",
+        "frame": "212.jpg",
+        "stg_score": 0.08709889801149659,
+        "vlm_score": 0.95,
+        "reason": "Vehicle detected (scooter), severe anomaly."
+    },
+    {
+        "id": 222,
+        "video": "01_0014",
+        "frame": "222.jpg",
+        "stg_score": 0.1101618816272975,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to the presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 909,
+        "video": "01_0016",
+        "frame": "211.jpg",
+        "stg_score": 0.08579123140885027,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (scooter), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 224,
+        "video": "01_0014",
+        "frame": "224.jpg",
+        "stg_score": 0.09426989511653848,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (Bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 913,
+        "video": "01_0016",
+        "frame": "215.jpg",
+        "stg_score": 0.09052215471097987,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in pedestrian zone."
+    },
+    {
+        "id": 225,
+        "video": "01_0014",
+        "frame": "225.jpg",
+        "stg_score": 0.08670152888917562,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly - Vehicle detected in a prohibited zone."
+    },
+    {
+        "id": 914,
+        "video": "01_0016",
+        "frame": "216.jpg",
+        "stg_score": 0.09150861958565913,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle in a pedestrian zone."
+    },
+    {
+        "id": 916,
+        "video": "01_0016",
+        "frame": "218.jpg",
+        "stg_score": 0.09328086965571177,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in pedestrian zone."
+    },
+    {
+        "id": 915,
+        "video": "01_0016",
+        "frame": "217.jpg",
+        "stg_score": 0.0924260662485294,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle."
+    },
+    {
+        "id": 911,
+        "video": "01_0016",
+        "frame": "213.jpg",
+        "stg_score": 0.08832132997069597,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected in a pedestrian zone."
+    },
+    {
+        "id": 917,
+        "video": "01_0016",
+        "frame": "219.jpg",
+        "stg_score": 0.09408026542844179,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (scooter) in the pedestrian zone."
+    },
+    {
+        "id": 919,
+        "video": "01_0016",
+        "frame": "221.jpg",
+        "stg_score": 0.09554532554059157,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 918,
+        "video": "01_0016",
+        "frame": "220.jpg",
+        "stg_score": 0.09483223221870447,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle in a pedestrian zone."
+    },
+    {
+        "id": 912,
+        "video": "01_0016",
+        "frame": "214.jpg",
+        "stg_score": 0.08946122462692326,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (scooter) in pedestrian zone."
+    },
+    {
+        "id": 920,
+        "video": "01_0016",
+        "frame": "222.jpg",
+        "stg_score": 0.0962284693048266,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to banned vehicle presence."
+    },
+    {
+        "id": 921,
+        "video": "01_0016",
+        "frame": "223.jpg",
+        "stg_score": 0.09689071522589983,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 922,
+        "video": "01_0016",
+        "frame": "224.jpg",
+        "stg_score": 0.09754098335409774,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle presence (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 923,
+        "video": "01_0016",
+        "frame": "225.jpg",
+        "stg_score": 0.09818779894525767,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: Vehicle presence in a pedestrian zone."
+    },
+    {
+        "id": 924,
+        "video": "01_0016",
+        "frame": "226.jpg",
+        "stg_score": 0.09883904154541294,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (scooter) in a banned zone."
+    },
+    {
+        "id": 925,
+        "video": "01_0016",
+        "frame": "227.jpg",
+        "stg_score": 0.09950172147485806,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle presence."
+    },
+    {
+        "id": 926,
+        "video": "01_0016",
+        "frame": "228.jpg",
+        "stg_score": 0.10018179690347331,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to vehicle presence (scooter) in a banned pedestrian zone."
+    },
+    {
+        "id": 928,
+        "video": "01_0016",
+        "frame": "230.jpg",
+        "stg_score": 0.10161196933323281,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected in a pedestrian zone."
+    },
+    {
+        "id": 950,
+        "video": "01_0016",
+        "frame": "252.jpg",
+        "stg_score": 0.11935515892590583,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 957,
+        "video": "01_0016",
+        "frame": "259.jpg",
+        "stg_score": 0.11618692366571952,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles in a pedestrian zone (0.95), which is a severe anomaly."
+    },
+    {
+        "id": 953,
+        "video": "01_0016",
+        "frame": "255.jpg",
+        "stg_score": 0.1193918655624704,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: Vehicle presence (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 958,
+        "video": "01_0016",
+        "frame": "260.jpg",
+        "stg_score": 0.11465182093133028,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (scooter) in a banned area."
+    },
+    {
+        "id": 956,
+        "video": "01_0016",
+        "frame": "258.jpg",
+        "stg_score": 0.11740833664193115,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: Vehicle presence (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 954,
+        "video": "01_0016",
+        "frame": "256.jpg",
+        "stg_score": 0.11898810274056941,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to banned vehicle presence."
+    },
+    {
+        "id": 960,
+        "video": "01_0016",
+        "frame": "262.jpg",
+        "stg_score": 0.11058577030911443,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to the presence of a vehicle in a pedestrian zone."
+    },
+    {
+        "id": 961,
+        "video": "01_0016",
+        "frame": "263.jpg",
+        "stg_score": 0.10804023123583442,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle presence in a pedestrian zone (Scooter), which is a severe anomaly."
+    },
+    {
+        "id": 959,
+        "video": "01_0016",
+        "frame": "261.jpg",
+        "stg_score": 0.11278813769864467,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 962,
+        "video": "01_0016",
+        "frame": "264.jpg",
+        "stg_score": 0.1051533497205017,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in pedestrian zone."
+    },
+    {
+        "id": 955,
+        "video": "01_0016",
+        "frame": "257.jpg",
+        "stg_score": 0.118334828423922,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle, which is banned in the pedestrian zone."
+    },
+    {
+        "id": 963,
+        "video": "01_0016",
+        "frame": "265.jpg",
+        "stg_score": 0.1019337971554384,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle usage (scooter) in a pedestrian zone."
+    },
+    {
+        "id": 1205,
+        "video": "01_0025",
+        "frame": "170.jpg",
+        "stg_score": 0.4524229034969845,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to presence of a vehicle in a pedestrian zone."
+    },
+    {
+        "id": 1206,
+        "video": "01_0025",
+        "frame": "171.jpg",
+        "stg_score": 0.46840724771892334,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 1208,
+        "video": "01_0025",
+        "frame": "173.jpg",
+        "stg_score": 0.49433306604600435,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in the pedestrian zone."
+    },
+    {
+        "id": 1209,
+        "video": "01_0025",
+        "frame": "174.jpg",
+        "stg_score": 0.5039484505571101,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle activity (bicycles) in a pedestrian zone, severe anomaly."
+    },
+    {
+        "id": 1212,
+        "video": "01_0025",
+        "frame": "177.jpg",
+        "stg_score": 0.5178517042957269,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 1214,
+        "video": "01_0025",
+        "frame": "179.jpg",
+        "stg_score": 0.5138233766180366,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycle) in pedestrian zone."
+    },
+    {
+        "id": 1215,
+        "video": "01_0025",
+        "frame": "180.jpg",
+        "stg_score": 0.5077102780353545,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected in the pedestrian zone."
+    },
+    {
+        "id": 1211,
+        "video": "01_0025",
+        "frame": "176.jpg",
+        "stg_score": 0.515810867285643,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected"
+    },
+    {
+        "id": 1216,
+        "video": "01_0025",
+        "frame": "181.jpg",
+        "stg_score": 0.49889226372541473,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: Bicycles present in the pedestrian zone."
+    },
+    {
+        "id": 1218,
+        "video": "01_0025",
+        "frame": "183.jpg",
+        "stg_score": 0.47345727466259585,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected vehicles (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 1995,
+        "video": "01_0026",
+        "frame": "359.jpg",
+        "stg_score": 0.10287874116455926,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: 0.95 for Vehicles and 0.95 for Violence."
+    },
+    {
+        "id": 1998,
+        "video": "01_0026",
+        "frame": "362.jpg",
+        "stg_score": 0.113366585178161,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to violence."
+    },
+    {
+        "id": 1997,
+        "video": "01_0026",
+        "frame": "361.jpg",
+        "stg_score": 0.11008551465053305,
+        "vlm_score": 0.95,
+        "reason": "Detected severe anomalies in Vehicles and Violence."
+    },
+    {
+        "id": 1996,
+        "video": "01_0026",
+        "frame": "360.jpg",
+        "stg_score": 0.10657454942956929,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to the presence of vehicles and potential violence."
+    },
+    {
+        "id": 2001,
+        "video": "01_0026",
+        "frame": "365.jpg",
+        "stg_score": 0.12139904124553255,
+        "vlm_score": 0.95,
+        "reason": "Detected severe anomaly due to vehicle presence and violence."
+    },
+    {
+        "id": 1994,
+        "video": "01_0026",
+        "frame": "358.jpg",
+        "stg_score": 0.09904306359500226,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to VEHICLES and VIOLENCE."
+    },
+    {
+        "id": 2002,
+        "video": "01_0026",
+        "frame": "366.jpg",
+        "stg_score": 0.123341720713379,
+        "vlm_score": 0.95,
+        "reason": "Detected severe anomaly due to violence (fighting or fleeing) and high vehicle presence in a banned area."
+    },
+    {
+        "id": 1999,
+        "video": "01_0026",
+        "frame": "363.jpg",
+        "stg_score": 0.11637361314859063,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles (bicycles, scooters) in the pedestrian zone, exceeding the threshold for severe anomaly."
+    },
+    {
+        "id": 1993,
+        "video": "01_0026",
+        "frame": "357.jpg",
+        "stg_score": 0.09511143367923021,
+        "vlm_score": 0.95,
+        "reason": "Detected anomalies in both Vehicles (0.95) and Violence (0.95), leading to a maximum score due to the presence of severe anomalies."
+    },
+    {
+        "id": 2000,
+        "video": "01_0026",
+        "frame": "364.jpg",
+        "stg_score": 0.11906429619113551,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle presence, indicating a severe anomaly."
+    },
+    {
+        "id": 2833,
+        "video": "01_0028",
+        "frame": "283.jpg",
+        "stg_score": 0.11951796127483057,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to vehicle presence and potential violence."
+    },
+    {
+        "id": 2838,
+        "video": "01_0028",
+        "frame": "288.jpg",
+        "stg_score": 0.1446401813787626,
+        "vlm_score": 0.7,
+        "reason": "Detected motion (Sudden Running) but below the severe threshold."
+    },
+    {
+        "id": 2834,
+        "video": "01_0028",
+        "frame": "284.jpg",
+        "stg_score": 0.12486077327601776,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Vehicles present (Score = 0.95)"
+    },
+    {
+        "id": 2832,
+        "video": "01_0028",
+        "frame": "282.jpg",
+        "stg_score": 0.11406078567575596,
+        "vlm_score": 0.7,
+        "reason": "Detected Motion within warning range (0.7 to 0.9), but no severe anomalies present."
+    },
+    {
+        "id": 2830,
+        "video": "01_0028",
+        "frame": "280.jpg",
+        "stg_score": 0.10292180007986154,
+        "vlm_score": 0.1,
+        "reason": "Normal activity detected (walking)."
+    },
+    {
+        "id": 2839,
+        "video": "01_0028",
+        "frame": "289.jpg",
+        "stg_score": 0.14911244652556022,
+        "vlm_score": 0.7,
+        "reason": "Detected motion (running) with score in warning range."
+    },
+    {
+        "id": 2835,
+        "video": "01_0028",
+        "frame": "285.jpg",
+        "stg_score": 0.13006372635958674,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected Violence."
+    },
+    {
+        "id": 2831,
+        "video": "01_0028",
+        "frame": "281.jpg",
+        "stg_score": 0.10851817753337495,
+        "vlm_score": 0.1,
+        "reason": "NORMAL activity detected: walking and standing."
+    },
+    {
+        "id": 2854,
+        "video": "01_0028",
+        "frame": "304.jpg",
+        "stg_score": 0.19046049913146854,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to violence."
+    },
+    {
+        "id": 2855,
+        "video": "01_0028",
+        "frame": "305.jpg",
+        "stg_score": 0.19082845055596961,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected Violence."
+    },
+    {
+        "id": 2857,
+        "video": "01_0028",
+        "frame": "307.jpg",
+        "stg_score": 0.1899820762449674,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly Detected: Vehicles (0.95) and Violence (0.95)."
+    },
+    {
+        "id": 2862,
+        "video": "01_0028",
+        "frame": "312.jpg",
+        "stg_score": 0.1766448440352982,
+        "vlm_score": 0.95,
+        "reason": "Detected severe anomalies in both vehicle presence and violence, exceeding threshold."
+    },
+    {
+        "id": 2864,
+        "video": "01_0028",
+        "frame": "314.jpg",
+        "stg_score": 0.16645304271372327,
+        "vlm_score": 0.7,
+        "reason": "MOTION detected: Sudden Running (Caution)."
+    },
+    {
+        "id": 2860,
+        "video": "01_0028",
+        "frame": "310.jpg",
+        "stg_score": 0.18405554435623914,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles and violence, contributing to a severe anomaly score."
+    },
+    {
+        "id": 2859,
+        "video": "01_0028",
+        "frame": "309.jpg",
+        "stg_score": 0.18670336222260164,
+        "vlm_score": 0.7,
+        "reason": "Detected Motion (Sudden Running) with a score of 0.7."
+    },
+    {
+        "id": 2863,
+        "video": "01_0028",
+        "frame": "313.jpg",
+        "stg_score": 0.17188555155250926,
+        "vlm_score": 0.7,
+        "reason": "Detected Motion (Sudden Running) with a score of 0.7, which is within the warning range."
+    },
+    {
+        "id": 2861,
+        "video": "01_0028",
+        "frame": "311.jpg",
+        "stg_score": 0.18070471397574664,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected vehicle presence (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 2866,
+        "video": "01_0028",
+        "frame": "316.jpg",
+        "stg_score": 0.1537564647867886,
+        "vlm_score": 0.1,
+        "reason": "Detected activities are normal (walking, standing) with no significant anomalies."
+    },
+    {
+        "id": 3181,
+        "video": "01_0029",
+        "frame": "174.jpg",
+        "stg_score": 0.12380664176128282,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 3176,
+        "video": "01_0029",
+        "frame": "169.jpg",
+        "stg_score": 0.11682057744703611,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in a pedestrian zone."
+    },
+    {
+        "id": 3180,
+        "video": "01_0029",
+        "frame": "173.jpg",
+        "stg_score": 0.12258700423323197,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in the pedestrian zone."
+    },
+    {
+        "id": 3184,
+        "video": "01_0029",
+        "frame": "177.jpg",
+        "stg_score": 0.12706687323449653,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to the presence of a vehicle (bicycle) in a banned zone."
+    },
+    {
+        "id": 3178,
+        "video": "01_0029",
+        "frame": "171.jpg",
+        "stg_score": 0.11989920759590204,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle: bicycle. Severe anomaly as vehicles are banned in the pedestrian zone."
+    },
+    {
+        "id": 3182,
+        "video": "01_0029",
+        "frame": "175.jpg",
+        "stg_score": 0.12495485154845833,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected vehicles (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3185,
+        "video": "01_0029",
+        "frame": "178.jpg",
+        "stg_score": 0.12804272529944763,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3177,
+        "video": "01_0029",
+        "frame": "170.jpg",
+        "stg_score": 0.11841319047050192,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3179,
+        "video": "01_0029",
+        "frame": "172.jpg",
+        "stg_score": 0.12128748238352081,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle (bicycle) in a pedestrian zone, which is a severe anomaly."
+    },
+    {
+        "id": 3183,
+        "video": "01_0029",
+        "frame": "176.jpg",
+        "stg_score": 0.12603936527993603,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3209,
+        "video": "01_0029",
+        "frame": "202.jpg",
+        "stg_score": 0.12846306419004627,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3210,
+        "video": "01_0029",
+        "frame": "203.jpg",
+        "stg_score": 0.12725162031694676,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected in a pedestrian zone."
+    },
+    {
+        "id": 3208,
+        "video": "01_0029",
+        "frame": "201.jpg",
+        "stg_score": 0.12959766710119686,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle (bicycle) in a banned area."
+    },
+    {
+        "id": 3211,
+        "video": "01_0029",
+        "frame": "204.jpg",
+        "stg_score": 0.12596739968454604,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly Detected: Vehicles (Bicycles) present in the pedestrian zone."
+    },
+    {
+        "id": 3212,
+        "video": "01_0029",
+        "frame": "205.jpg",
+        "stg_score": 0.12461258613213015,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: vehicles (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 3207,
+        "video": "01_0029",
+        "frame": "200.jpg",
+        "stg_score": 0.13064989329661889,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Bicycle presence in a pedestrian zone."
+    },
+    {
+        "id": 3214,
+        "video": "01_0029",
+        "frame": "207.jpg",
+        "stg_score": 0.12168870154498342,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (bicycle) in the pedestrian zone."
+    },
+    {
+        "id": 3206,
+        "video": "01_0029",
+        "frame": "199.jpg",
+        "stg_score": 0.13161320869511525,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Vehicles (Bicycles) are present in a pedestrian zone."
+    },
+    {
+        "id": 3213,
+        "video": "01_0029",
+        "frame": "206.jpg",
+        "stg_score": 0.12318716287970527,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle presence (bicycle)."
+    },
+    {
+        "id": 3847,
+        "video": "01_0051",
+        "frame": "118.jpg",
+        "stg_score": 0.10679143752272155,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle presence (bicycle) in a banned zone."
+    },
+    {
+        "id": 3848,
+        "video": "01_0051",
+        "frame": "119.jpg",
+        "stg_score": 0.107808553564215,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to the presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 3849,
+        "video": "01_0051",
+        "frame": "120.jpg",
+        "stg_score": 0.10853061046612411,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly due to detected vehicle (bicycle) in a banned zone."
+    },
+    {
+        "id": 3851,
+        "video": "01_0051",
+        "frame": "122.jpg",
+        "stg_score": 0.10917769026546897,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle presence (bicycle) and high violence score."
+    },
+    {
+        "id": 3852,
+        "video": "01_0051",
+        "frame": "123.jpg",
+        "stg_score": 0.10915299510134184,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 3853,
+        "video": "01_0051",
+        "frame": "124.jpg",
+        "stg_score": 0.10893232851434552,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in a pedestrian zone, which is banned."
+    },
+    {
+        "id": 3850,
+        "video": "01_0051",
+        "frame": "121.jpg",
+        "stg_score": 0.10897894779814907,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to vehicle presence in a pedestrian zone."
+    },
+    {
+        "id": 3846,
+        "video": "01_0051",
+        "frame": "117.jpg",
+        "stg_score": 0.10546146898800704,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3844,
+        "video": "01_0051",
+        "frame": "115.jpg",
+        "stg_score": 0.10181395380439405,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3854,
+        "video": "01_0051",
+        "frame": "125.jpg",
+        "stg_score": 0.10854378760547705,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycle), which is banned."
+    },
+    {
+        "id": 3845,
+        "video": "01_0051",
+        "frame": "116.jpg",
+        "stg_score": 0.103805145393873,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to the presence of a banned vehicle (bicycle)."
+    },
+    {
+        "id": 3875,
+        "video": "01_0051",
+        "frame": "146.jpg",
+        "stg_score": 0.09821756299011973,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected: vehicles in a pedestrian zone."
+    },
+    {
+        "id": 3880,
+        "video": "01_0051",
+        "frame": "151.jpg",
+        "stg_score": 0.10054237128822963,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected in pedestrian zone."
+    },
+    {
+        "id": 3879,
+        "video": "01_0051",
+        "frame": "150.jpg",
+        "stg_score": 0.09991533579582931,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3877,
+        "video": "01_0051",
+        "frame": "148.jpg",
+        "stg_score": 0.09889394925790383,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles in a pedestrian zone, which is a severe anomaly."
+    },
+    {
+        "id": 3881,
+        "video": "01_0051",
+        "frame": "152.jpg",
+        "stg_score": 0.10123729330771021,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3883,
+        "video": "01_0051",
+        "frame": "154.jpg",
+        "stg_score": 0.10279310580761716,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3884,
+        "video": "01_0051",
+        "frame": "155.jpg",
+        "stg_score": 0.10363162352414755,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles in a pedestrian zone."
+    },
+    {
+        "id": 3878,
+        "video": "01_0051",
+        "frame": "149.jpg",
+        "stg_score": 0.09936379640656239,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly due to the presence of a bicycle in the pedestrian zone, which is banned."
+    },
+    {
+        "id": 3882,
+        "video": "01_0051",
+        "frame": "153.jpg",
+        "stg_score": 0.101991039139682,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles (bicycle) in a pedestrian zone, exceeding threshold for severe anomaly."
+    },
+    {
+        "id": 3876,
+        "video": "01_0051",
+        "frame": "147.jpg",
+        "stg_score": 0.09851065808908198,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Vehicle (bicycle) present in pedestrian zone."
+    },
+    {
+        "id": 3885,
+        "video": "01_0051",
+        "frame": "156.jpg",
+        "stg_score": 0.10449349386427151,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Presence of a bicycle in a pedestrian zone, which is banned."
+    },
+    {
+        "id": 3909,
+        "video": "01_0051",
+        "frame": "180.jpg",
+        "stg_score": 0.1042323538657113,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle presence (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3908,
+        "video": "01_0051",
+        "frame": "179.jpg",
+        "stg_score": 0.10524549374874811,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicles (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3911,
+        "video": "01_0051",
+        "frame": "182.jpg",
+        "stg_score": 0.10207969676204454,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 3907,
+        "video": "01_0051",
+        "frame": "178.jpg",
+        "stg_score": 0.10621032379240178,
+        "vlm_score": 0.95,
+        "reason": "Detected severe anomalies: Vehicles (0.95) and Violence (0.95)."
+    },
+    {
+        "id": 3914,
+        "video": "01_0051",
+        "frame": "185.jpg",
+        "stg_score": 0.09854981080294171,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3912,
+        "video": "01_0051",
+        "frame": "183.jpg",
+        "stg_score": 0.10094445608416774,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3913,
+        "video": "01_0051",
+        "frame": "184.jpg",
+        "stg_score": 0.09976904366428302,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected vehicle activity (bicycle) in a pedestrian zone, which is banned."
+    },
+    {
+        "id": 3915,
+        "video": "01_0051",
+        "frame": "186.jpg",
+        "stg_score": 0.09728072951145737,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in the pedestrian zone, which is banned."
+    },
+    {
+        "id": 3906,
+        "video": "01_0051",
+        "frame": "177.jpg",
+        "stg_score": 0.10712014057607692,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 3910,
+        "video": "01_0051",
+        "frame": "181.jpg",
+        "stg_score": 0.10317601753074504,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 4007,
+        "video": "01_0051",
+        "frame": "278.jpg",
+        "stg_score": 0.2770869701407297,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in pedestrian zone."
+    },
+    {
+        "id": 3999,
+        "video": "01_0051",
+        "frame": "270.jpg",
+        "stg_score": 0.20865425445188254,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 4004,
+        "video": "01_0051",
+        "frame": "275.jpg",
+        "stg_score": 0.2525677527732971,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in the pedestrian zone."
+    },
+    {
+        "id": 4002,
+        "video": "01_0051",
+        "frame": "273.jpg",
+        "stg_score": 0.2354100028563456,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly due to detected vehicles in a pedestrian zone."
+    },
+    {
+        "id": 3998,
+        "video": "01_0051",
+        "frame": "269.jpg",
+        "stg_score": 0.1995126318618951,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected: Vehicles (bicycle) present in pedestrian zone."
+    },
+    {
+        "id": 4005,
+        "video": "01_0051",
+        "frame": "276.jpg",
+        "stg_score": 0.2609127745841401,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicle (bicycle), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 4006,
+        "video": "01_0051",
+        "frame": "277.jpg",
+        "stg_score": 0.26908923175428157,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle), which is banned in the pedestrian zone."
+    },
+    {
+        "id": 4003,
+        "video": "01_0051",
+        "frame": "274.jpg",
+        "stg_score": 0.24406370233123817,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected in a pedestrian zone."
+    },
+    {
+        "id": 4001,
+        "video": "01_0051",
+        "frame": "272.jpg",
+        "stg_score": 0.22661642163802773,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to vehicles in the pedestrian zone."
+    },
+    {
+        "id": 4000,
+        "video": "01_0051",
+        "frame": "271.jpg",
+        "stg_score": 0.21769371524855857,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in a pedestrian zone, which is banned."
+    },
+    {
+        "id": 4008,
+        "video": "01_0051",
+        "frame": "279.jpg",
+        "stg_score": 0.28489485161732425,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle) in a banned zone."
+    },
+    {
+        "id": 4034,
+        "video": "01_0051",
+        "frame": "305.jpg",
+        "stg_score": 0.33048961787650327,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 4039,
+        "video": "01_0051",
+        "frame": "310.jpg",
+        "stg_score": 0.2670847546886134,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycles are banned in the pedestrian zone)."
+    },
+    {
+        "id": 4031,
+        "video": "01_0051",
+        "frame": "302.jpg",
+        "stg_score": 0.35392133403739756,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicle detected (bicycle)."
+    },
+    {
+        "id": 4035,
+        "video": "01_0051",
+        "frame": "306.jpg",
+        "stg_score": 0.32011340959296497,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly - Vehicles detected (bicycles)."
+    },
+    {
+        "id": 4036,
+        "video": "01_0051",
+        "frame": "307.jpg",
+        "stg_score": 0.3085011518941131,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to detected vehicle presence (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 4032,
+        "video": "01_0051",
+        "frame": "303.jpg",
+        "stg_score": 0.34739576142613804,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Vehicles detected (bicycle), which are banned in the pedestrian zone."
+    },
+    {
+        "id": 4038,
+        "video": "01_0051",
+        "frame": "309.jpg",
+        "stg_score": 0.2818751116843751,
+        "vlm_score": 0.95,
+        "reason": "Detected vehicles (bicycle) in a pedestrian zone: Severe Anomaly."
+    },
+    {
+        "id": 4037,
+        "video": "01_0051",
+        "frame": "308.jpg",
+        "stg_score": 0.2957223774134471,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to the presence of a banned vehicle (bicycle) in the pedestrian zone."
+    },
+    {
+        "id": 4030,
+        "video": "01_0051",
+        "frame": "301.jpg",
+        "stg_score": 0.35919641877249275,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to presence of a vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 4033,
+        "video": "01_0051",
+        "frame": "304.jpg",
+        "stg_score": 0.3395885298726247,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a bicycle in a pedestrian zone."
+    },
+    {
+        "id": 4040,
+        "video": "01_0051",
+        "frame": "311.jpg",
+        "stg_score": 0.25150161315743813,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly due to presence of a vehicle (bicycle) in a prohibited area."
+    },
+    {
+        "id": 4208,
+        "video": "01_0052",
+        "frame": "142.jpg",
+        "stg_score": 0.12881033571786818,
+        "vlm_score": 0.1,
+        "reason": "Normal activities detected with no severe anomalies."
+    },
+    {
+        "id": 4206,
+        "video": "01_0052",
+        "frame": "140.jpg",
+        "stg_score": 0.12596570844235352,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of vehicles in the pedestrian zone."
+    },
+    {
+        "id": 4203,
+        "video": "01_0052",
+        "frame": "137.jpg",
+        "stg_score": 0.11995895677638746,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly due to the presence of vehicles and detected violence."
+    },
+    {
+        "id": 4211,
+        "video": "01_0052",
+        "frame": "145.jpg",
+        "stg_score": 0.13154326524680682,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected Vehicles."
+    },
+    {
+        "id": 4205,
+        "video": "01_0052",
+        "frame": "139.jpg",
+        "stg_score": 0.12420310720885765,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to vehicles and violence."
+    },
+    {
+        "id": 4207,
+        "video": "01_0052",
+        "frame": "141.jpg",
+        "stg_score": 0.12749829125648035,
+        "vlm_score": 0.1,
+        "reason": "Normal activity observed: walking and standing without any detected anomalies."
+    },
+    {
+        "id": 4209,
+        "video": "01_0052",
+        "frame": "143.jpg",
+        "stg_score": 0.12991302582465158,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of vehicles (bicycles) in a pedestrian zone."
+    },
+    {
+        "id": 4210,
+        "video": "01_0052",
+        "frame": "144.jpg",
+        "stg_score": 0.1308191938746227,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected vehicles (bicycles, carts) despite them being banned in the pedestrian zone."
+    },
+    {
+        "id": 4212,
+        "video": "01_0052",
+        "frame": "146.jpg",
+        "stg_score": 0.13210118213406127,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to presence of a vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 4204,
+        "video": "01_0052",
+        "frame": "138.jpg",
+        "stg_score": 0.122202789167138,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly: Detected Vehicle activity."
+    },
+    {
+        "id": 4214,
+        "video": "01_0052",
+        "frame": "148.jpg",
+        "stg_score": 0.13278915419259507,
+        "vlm_score": 0.95,
+        "reason": "Severe anomaly detected due to the presence of a vehicle (bicycle) in a pedestrian zone."
+    },
+    {
+        "id": 4213,
+        "video": "01_0052",
+        "frame": "147.jpg",
+        "stg_score": 0.13251028738554718,
+        "vlm_score": 0.95,
+        "reason": "Severe Anomaly detected due to the presence of vehicles."
+    },
+    {
+        "id": 4215,
+        "video": "01_0052",
+        "frame": "149.jpg",
+        "stg_score": 0.13295735332829506,
+        "vlm_score": 0.95,
+        "reason": "Detected severe anomalies: 0.95 for vehicles (bicycle) and 0.95 for violence."
+    }
+]

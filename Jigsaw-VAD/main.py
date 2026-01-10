@@ -53,7 +53,8 @@ def train(args):
         print("-------------{} : {}".format(k, v))
 
     # Load Data
-    data_dir = f"/irip/wangguodong_2020/projects/datasets/vad/{args.dataset}/training"
+    # data_dir = f"/irip/wangguodong_2020/projects/datasets/vad/{args.dataset}/training"  # original author's path
+    data_dir = f"{args.dataset}/training"  # user's local path (generated patches)
     detect_pkl = f'detect/{args.dataset}_train_detect_result_yolov3.pkl'
 
     vad_dataset = VideoAnomalyDataset_C3D(data_dir, 
@@ -146,7 +147,8 @@ def val(args, net=None):
     print("The running_date : {}".format(running_date))
 
     # Load Data
-    data_dir = f"/irip/wangguodong_2020/projects/datasets/vad/{args.dataset}/testing"
+    # data_dir = f"/irip/wangguodong_2020/projects/datasets/vad/{args.dataset}/testing"  # original author's path
+    data_dir = f"{args.dataset}/testing"  # user's local path (generated patches)
     detect_pkl = f'detect/{args.dataset}_test_detect_result_yolov3.pkl'
 
     testing_dataset = VideoAnomalyDataset_C3D(data_dir, 

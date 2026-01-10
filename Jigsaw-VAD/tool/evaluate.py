@@ -12,7 +12,8 @@ import pickle
 from sklearn import metrics
 import math
 import json
-DATA_DIR='/irip/wangguodong_2020/projects/datasets/vad/'
+# DATA_DIR='/irip/wangguodong_2020/projects/datasets/vad/'  # original author's path
+DATA_DIR='/home/user11/NTNU-LIOU,ZIH-SYUAN/data/ShanghaiTech_original/'  # user's local path
 
 # normalize scores in each sub video
 NORMALIZE = True
@@ -80,7 +81,8 @@ class GroundTruthLoader(object):
     ENTRANCE = 'enter'
     EXIT = 'exit'
     SHANGHAITECH = 'shanghaitech'
-    SHANGHAITECH_LABEL_PATH = os.path.join(DATA_DIR, 'shanghaitech/frame_masks')
+    # SHANGHAITECH_LABEL_PATH = os.path.join(DATA_DIR, 'shanghaitech/frame_masks')  # original author's path
+    SHANGHAITECH_LABEL_PATH = os.path.join(DATA_DIR, 'shanghaitech/testing/test_frame_mask')  # user's local path
     TOY_DATA = 'toydata'
     TOY_DATA_LABEL_PATH = os.path.join(DATA_DIR, TOY_DATA, 'toydata.json')
 
@@ -539,7 +541,8 @@ def compute_auc_average(res, reverse, smoothing):
     auc_list = []
     dataset, psnr_records, gt = load_psnr_gt(res)
 
-    file_name_dir = '/irip/wangguodong_2020/projects/datasets/vad/' + dataset +  '/testing'
+    # file_name_dir = '/irip/wangguodong_2020/projects/datasets/vad/' + dataset +  '/testing'  # original author's path
+    file_name_dir = '/home/user11/NTNU-LIOU,ZIH-SYUAN/data/ShanghaiTech_original/' + dataset +  '/testing/frames'  # user's local path
     file_name = os.listdir(file_name_dir)
     file_name.sort()
 

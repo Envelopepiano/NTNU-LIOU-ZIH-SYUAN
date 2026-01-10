@@ -71,9 +71,13 @@ class VideoAnomalyDataset_C3D(Dataset):
         for video_file in file_list:
             if video_file not in self.videos_list:
                 self.videos_list.append(video_file)
-            l = os.listdir(self.data_dir + '/' + video_file)
+            # Use detect file to get the correct frame count instead of counting patches
+            if self.detect is not None:
+                length = len(self.detect[video_file])
+            else:
+                l = os.listdir(self.data_dir + '/' + video_file)
+                length = len(l)
             self.videos += 1
-            length = len(l)
             total_frames += length
             for frame in range(start_ind, length - start_ind, self.sample_step):
                 if self.detect is not None:

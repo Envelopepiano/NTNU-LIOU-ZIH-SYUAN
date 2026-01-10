@@ -1,102 +1,166 @@
 # ==========================================
 # File: vlm_fusion/train_fusion.py
-# Date: 2026-01-08 (Updated)
+# Deterministic version (repeatable training)
 # ==========================================
+#cuda 環境變數
+import os
+os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")
+os.environ.setdefault("PYTHONHASHSEED", "42")
 
+import os
+import random
+import numpy as np
 import torch
 import torch.optim as optim
 import torch.nn as nn
-import numpy as np
-import os
 from sklearn.metrics import roc_auc_score
+
 from fusion_model import CorrectionNet
 
-def load_data():
-    # 強制指定路徑，避免讀錯
-    cache_dir = "vlm_fusion/data_cache"
-    print(f"📂 正在讀取數據，路徑: {cache_dir} ...")
-    
+
+# ---------------------------
+# 1) Deterministic / Seed
+# ---------------------------
+SEED = 42
+
+def set_deterministic(seed: int = 42):
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    random.seed(seed)
+    np.random.seed(seed)
+
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
+    # cuDNN deterministic
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
+    # torch deterministic algorithms (may warn if some ops not supported)
     try:
-        stg = np.load(os.path.join(cache_dir, "stg_scores.npy"))
-        vlm = np.load(os.path.join(cache_dir, "vlm_scores.npy"))
-        gt = np.load(os.path.join(cache_dir, "gt_labels.npy"))
-        
-        # --- 關鍵檢查 ---
-        print(f"📊 數據統計: 樣本數 {len(stg)}")
-        if len(stg) < 2000:
-            print("❌ 錯誤：讀取到的樣本數過少 (<2000)，這看起來像是 Dummy Data！")
-            print("請確認你已執行 step1_export_real_scores.py 並且成功匯出 40k+ 筆數據。")
-            exit(1)
-            
-        # 簡單模擬 motion 分數 (之後換成真的)
-        motion = np.random.rand(len(stg), 1).astype(np.float32)
-        
-        # 轉成 Tensor
-        stg_t = torch.tensor(stg, dtype=torch.float32).reshape(-1, 1)
-        vlm_t = torch.tensor(vlm, dtype=torch.float32).reshape(-1, 1)
-        motion_t = torch.tensor(motion, dtype=torch.float32).reshape(-1, 1)
-        gt_t = torch.tensor(gt, dtype=torch.float32).reshape(-1, 1)
-        
-        return stg_t, vlm_t, motion_t, gt_t
-        
-    except FileNotFoundError as e:
-        print(f"❌ 找不到檔案: {e}")
-        print("請依序執行 step1 和 step2！")
-        exit(1)
+        torch.use_deterministic_algorithms(True)
+    except Exception:
+        pass
+
+set_deterministic(SEED)
+
+
+# ---------------------------
+# 2) Load data (robust path)
+# ---------------------------
+def load_data():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    cache_dir = os.path.join(base_dir, "data_cache")
+    print(f"📂 正在讀取數據，路徑: {cache_dir}")
+
+    stg = np.load(os.path.join(cache_dir, "stg_scores.npy")).astype(np.float32)
+    vlm_raw = np.load(os.path.join(cache_dir, "vlm_scores.npy")).astype(np.float32)
+    gt  = np.load(os.path.join(cache_dir, "gt_labels.npy")).astype(np.float32)
+    if len(stg) < 2000:
+        raise RuntimeError("讀取到的樣本數過少，請確認 step1_export_real_scores.py 已正確匯出 40k+。")
+
+    # ✅ 讓 motion「固定不變」：如果沒有真 motion，就用全 0（最穩、可重現）
+    motion_path = os.path.join(cache_dir, "motion_scores.npy")
+    if os.path.exists(motion_path):
+        motion = np.load(motion_path).astype(np.float32)
+        if motion.ndim == 1:
+            motion = motion.reshape(-1, 1)
+    else:
+        motion = np.zeros((len(stg), 1), dtype=np.float32)
+        np.save(motion_path, motion)
+        print(f"ℹ️ motion_scores.npy 不存在，已建立全 0 motion 並存到: {motion_path}")
+
+    # shape to (N,1)
+    stg = stg.reshape(-1, 1)
+    vlm_raw = vlm_raw.reshape(-1, 1)
+    gt  = gt.reshape(-1, 1)
+
+    # ✅ mask: 有跑過 VLM 的 frame（NaN = 未跑過）
+    vlm_mask = np.isfinite(vlm_raw).astype(np.float32)  # (N,1)
+    # ✅ 餵進模型前，把 NaN 補成 0（避免 NaN 傳染整個 forward）
+    vlm = np.nan_to_num(vlm_raw, nan=0.0).astype(np.float32)
+
+    print(f"📊 Samples: {len(stg)}")
+    print(f"📊 VLM covered: {int(vlm_mask.sum())} ({float(vlm_mask.mean())*100:.2f}%)")
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    stg_t = torch.from_numpy(stg).to(device)
+    vlm_t = torch.from_numpy(vlm).to(device)
+    mot_t = torch.from_numpy(motion).to(device)
+    gt_t  = torch.from_numpy(gt).to(device)
+    msk_t = torch.from_numpy(vlm_mask).to(device)
+
+    return stg_t, vlm_t, mot_t, gt_t, msk_t, device
+
 
 def train():
-    # 1. 準備數據
-    stg, vlm, motion, gt = load_data()
-    
-    # 這裡我們用簡單的分割，但為了保留原本的測試集，我們直接用全量數據來驗證 "Concept"
-    # 在正式論文實驗中，你需要嚴格區分 Train/Test
-    # 這裡為了讓你看到 85.9 -> 99.9 的效果，我們把測試集當作驗證集
-    
-    # 使用所有數據進行訓練 (因為這只是驗證 Oracle VLM 的極限)
-    train_data = (stg, vlm, motion, gt)
-    
-    # 2. 初始化模型
-    model = CorrectionNet()
+    stg, vlm, motion, gt, vlm_mask, device = load_data()
+
+    # ✅ 固定 train/val split（可重現）
+    N = gt.shape[0]
+    rng = np.random.RandomState(SEED)
+    perm = rng.permutation(N)
+    n_train = int(N * 0.8)
+    tr_idx = torch.from_numpy(perm[:n_train]).long().to(device)
+    va_idx = torch.from_numpy(perm[n_train:]).long().to(device)
+
+    model = CorrectionNet().to(device)
     optimizer = optim.Adam(model.parameters(), lr=0.005)
     criterion = nn.BCELoss()
-    
-    print(f"🚀 開始訓練融合網路 (Data size: {len(gt)})...")
-    
-    # 3. 訓練迴圈
+
+    print(f"🚀 Start training (deterministic) | device={device} | train={len(tr_idx)} val={len(va_idx)}")
+
     for epoch in range(100):
         model.train()
         optimizer.zero_grad()
-        preds = model(train_data[0], train_data[1], train_data[2])
-        loss = criterion(preds, train_data[3])
+
+        # 只在「有 VLM 的樣本」上訓練更合理（否則 VLM=0 代表缺失會污染訓練）
+        tr_has_vlm = (vlm_mask[tr_idx].squeeze(1) > 0.5)
+        idx_use = tr_idx[tr_has_vlm]
+
+        if idx_use.numel() == 0:
+            raise RuntimeError("Train split 裡沒有任何有 VLM 的樣本。請先跑 step2 增加 VLM 覆蓋率。")
+
+        preds = model(stg[idx_use], vlm[idx_use], motion[idx_use])
+        loss = criterion(preds, gt[idx_use])
+
         loss.backward()
         optimizer.step()
-        
+
         if epoch % 20 == 0:
-            print(f"Epoch {epoch}, Loss: {loss.item():.4f}")
-            
-    # 4. 最終評估
+            model.eval()
+            with torch.no_grad():
+                # 評估：對沒有 VLM 的地方，直接用 STG 當分數（不亂猜）
+                pred_all = stg.clone()  # baseline
+                has_vlm_all = (vlm_mask.squeeze(1) > 0.5)
+                pred_all[has_vlm_all] = model(stg[has_vlm_all], vlm[has_vlm_all], motion[has_vlm_all])
+
+                y_true = gt[va_idx].detach().cpu().numpy().ravel()
+                y_score = pred_all[va_idx].detach().cpu().numpy().ravel()
+                auc_val = roc_auc_score(y_true, y_score)
+
+                print(f"Epoch {epoch:03d} | loss={loss.item():.4f} | val_auc={auc_val:.4f}")
+
+    # Final report
     model.eval()
     with torch.no_grad():
-        final_preds = model(stg, vlm, motion)
-        
-        y_true = gt.numpy()
-        y_scores = final_preds.numpy()
-        stg_baseline = stg.numpy()
-        
-        auc = roc_auc_score(y_true, y_scores)
-        stg_auc = roc_auc_score(y_true, stg_baseline)
-        
-        print("\n" + "="*50)
-        print(f"✅ 驗證完成 (Oracle Test)")
-        print(f"Baseline (STG-NF Original): {stg_auc:.4f}  <-- 應該要接近 0.859")
-        print(f"Fused (With Perfect VLM)  : {auc:.4f}     <-- 應該要接近 0.99")
-        print(f"提升幅度: {(auc - stg_auc)*100:.2f}%")
-        print("="*50)
-        
-        # 關於訓練速度的解釋
-        print("\n💡 提示: 訓練速度很快是正常的。")
-        print(f"因為我們只訓練一個 3 層的小網路 (參數量 < 1000)，")
-        print(f"處理 {len(gt)} 筆向量數據只需要幾毫秒。")
+        pred_all = stg.clone()
+        has_vlm_all = (vlm_mask.squeeze(1) > 0.5)
+        pred_all[has_vlm_all] = model(stg[has_vlm_all], vlm[has_vlm_all], motion[has_vlm_all])
+
+        y_true_all = gt.detach().cpu().numpy().ravel()
+        y_score_all = pred_all.detach().cpu().numpy().ravel()
+        y_stg_all = stg.detach().cpu().numpy().ravel()
+
+        auc_fused = roc_auc_score(y_true_all, y_score_all)
+        auc_stg = roc_auc_score(y_true_all, y_stg_all)
+
+    print("\n" + "=" * 60)
+    print("✅ Done (deterministic)")
+    print(f"STG baseline AUC: {auc_stg:.4f}")
+    print(f"Fused AUC       : {auc_fused:.4f}")
+    print(f"VLM covered     : {int(vlm_mask.sum().item())} / {N}")
+    print("=" * 60)
+
 
 if __name__ == "__main__":
     train()

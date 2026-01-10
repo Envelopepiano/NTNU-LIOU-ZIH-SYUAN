@@ -177,8 +177,10 @@ if __name__ == '__main__':
     parser.add_argument("--sample_num", type=int, default=9)
 
     args = parser.parse_args()
-    data_dir = "/irip/wangguodong_2020/projects/datasets/vad/"  # directory for raw frames
-    shanghai_dataset = VideoAnomalyDataset(data_dir=data_dir + args.dataset + '/' + args.phase + 'ing/', 
+    # data_dir = "/irip/wangguodong_2020/projects/datasets/vad/"  # directory for raw frames (original author's path)
+    # user's local path - ShanghaiTech dataset structure: shanghaitech/{testing,training}/frames/
+    data_dir = "/home/user11/NTNU-LIOU,ZIH-SYUAN/data/ShanghaiTech_original/shanghaitech/" + args.phase + "ing/frames/"
+    shanghai_dataset = VideoAnomalyDataset(data_dir=data_dir, 
                                            detect_dir='detect/' + args.dataset + '_' + args.phase + '_detect_result_yolov3.pkl',
                                            dataset=args.dataset,
                                            filter_ratio=args.filter_ratio, 

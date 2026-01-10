@@ -32,40 +32,17 @@ def spy_score_auc(scores_np, gt):
     save_dir = os.path.join(current_dir, 'data_cache')
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    
-    # ===== 關鍵修正 =====
-    # STG-NF 原始 scoring_utils.py 會把 GT 反轉：
-    #   原始 mask: 1=異常, 0=正常
-    #   轉換後 gt: 1=正常, 0=異常 (為了配合 Log-Likelihood，越小越異常)
-    #
-    # 為了讓我們的融合邏輯更直觀，我們把 GT 轉回標準格式：
-    #   1 = 異常
-    #   0 = 正常
-    # 同時把 STG 分數取負號，讓它變成：越大越異常
-    # ====================
-    
-    gt_standard = 1 - gt  # 轉回: 1=異常, 0=正常
-    stg_standard = -scores_np  # 取負: 越大越異常
-    
-    # 正規化 STG 分數到 0~1
-    stg_min, stg_max = stg_standard.min(), stg_standard.max()
-    stg_normalized = (stg_standard - stg_min) / (stg_max - stg_min + 1e-8)
         
-    # 匯出真實分數 (已轉換為標準格式)
-    np.save(os.path.join(save_dir, 'stg_scores.npy'), stg_normalized)  # 0~1, 越大越異常
-    np.save(os.path.join(save_dir, 'gt_labels.npy'), gt_standard)      # 1=異常, 0=正常
-    
-    # 同時保存原始分數供參考
-    np.save(os.path.join(save_dir, 'stg_scores_raw.npy'), scores_np)   # 原始 Log-Likelihood
-    np.save(os.path.join(save_dir, 'gt_labels_raw.npy'), gt)           # 原始 (1=正常, 0=異常)
+    # 匯出真實分數
+    np.save(os.path.join(save_dir, 'stg_scores.npy'), scores_np)
+    np.save(os.path.join(save_dir, 'gt_labels.npy'), gt)
     
     print(f"[VLM_Fusion] ✅ 真實數據已匯出至: {save_dir}")
-    print(f"[VLM_Fusion] 📊 GT 統計: 異常幀={int(gt_standard.sum())}, 正常幀={int((1-gt_standard).sum())}")
-    print(f"[VLM_Fusion] 📊 STG 分數: min={stg_normalized.min():.4f}, max={stg_normalized.max():.4f}")
+    print(f"[VLM_Fusion] (stg_scores.npy, gt_labels.npy)")
     print(f"[VLM_Fusion] 下一步：請執行 python vlm_fusion/step2_oracle_test.py 來驗證效果。")
     print("-" * 50)
 
-    # 執行原本的 AUC 計算邏輯 (使用原始數據)
+    # 執行原本的 AUC 計算邏輯
     scores_np[scores_np == np.inf] = scores_np[scores_np != np.inf].max()
     scores_np[scores_np == -1 * np.inf] = scores_np[scores_np != -1 * np.inf].min()
     auc = roc_auc_score(gt, scores_np)
